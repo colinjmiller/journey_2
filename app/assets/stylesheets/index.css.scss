@@ -2,10 +2,6 @@ $primary-bgd-color: black;
 $primary-border-color: rgb(123, 123, 123);
 $primary-text-color: white;
 
-$header-text-duration: 1.5s;
-$instruction-duration: 1.5s;
-$throb-duration: 2s;
-
 * {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -16,71 +12,3 @@ body {
   padding: 0;
   margin: 0;
 }
-
-#main {
-  height: 100vh;
-  overflow-x: hidden;
-  position: relative;
-}
-
-#menu_container {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-h1, p, #inputs {
-  text-align: center;
-}
-
-h1 {
-  font-size: 64px;
-  margin: 0;
-  animation: $header-text-duration easein;
-  -webkit-animation: $header-text-duration easein;
-  -moz-animation: $header-text-duration easein;
-}
-
-p, #inputs {
-  font-size: 16px;
-  animation: $instruction-duration easein $header-text-duration forwards;
-  -webkit-animation: $instruction-duration easein $header-text-duration forwards;
-  -moz-animation: $instruction-duration easein $header-text-duration forwards;
-}
-
-p, #inputs {
-  opacity: 0;
-}
-
-#username {
-  background-color: $primary-bgd-color;
-  border: 1px solid $primary-border-color;
-  color: $primary-text-color;
-  border-radius: 5px 0px 0px 5px;
-  padding: 5px;
-  animation: $throb-duration throb-border infinite;
-  -webkit-animation: $throb-duration throb-border infinite alternate;
-  -moz-animation: $throb-duration throb-border infinite;
-}
-
-button {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
-  border-radius: 0px 5px 5px 0px;
-  padding: 5px;
-  margin-left: -2px;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-@-webkit-keyframes easein { from { opacity: 0; } to { opacity: 1; } }
-@-moz-keyframes easein { from { opacity: 0; } to { opacity: 1; } }
-@keyframes easein { from { opacity: 0; } to { opacity: 1; } }
-
-@-webkit-keyframes throb-border { from { border-color: $primary-border-color; } to { border-color: $primary-text-color; } }
-@-moz-keyframes throb-border { from { border-color: $primary-border-color; } to { border-color: $primary-text-color; } }
-@keyframes throbborder { from { border-color: $primary-border-color; } to { border-color: $primary-text-color; } }
