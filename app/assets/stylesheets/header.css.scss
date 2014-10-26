@@ -1,7 +1,7 @@
 $header-size: 80px;
 
 body {
-  padding-top: $header-size;
+  padding: $header-size 0;
 }
 
 header {
@@ -16,6 +16,8 @@ header {
   background-color: black;
 
   .logo {
+    text-decoration: none;
+    color: white;
     width: 400px;
     font-size: 60px;
     font-weight: bold;
