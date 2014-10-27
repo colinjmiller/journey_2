@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'levels/status(/:num)', to: "levels#status"
+  get 'levels/move', to: "levels#move"
+
   get 'size', to: "size#index"
   get 'size/sized', to: "index#show"
 

@@ -1,0 +1,6 @@
+<% unless @status == 200 %>
+  <h1><%= @status %>: <%= @message %></h1>
+  <p>Please make it OK.</p>
+<% else %>
+  <h1><a href="/">Thank You.</a></h1>
+<% end %>

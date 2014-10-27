@@ -21,11 +21,28 @@ body {
   .level {
     display: block;
     box-sizing: border-box;
+    float: left;
     width: 90px;
     height: 90px;
     margin: 5px;
+    margin-right: 0;
     border: 1px solid $primary-border-color;
     transition: .2s all ease;
+    text-align: center;
+
+    color: white;
+    text-decoration: none;
+    font-size: 85px;
+    line-height: .8;
+
+    &.complete {
+      border: 2px solid lime;
+    }
+
+    &.status {
+      font-size: 60px;
+      line-height: 1.4;
+    }
 
     &:hover {
       border-color: white;
