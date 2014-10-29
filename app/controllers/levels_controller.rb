@@ -1,4 +1,8 @@
 class LevelsController < ApplicationController
+
+  def size
+  end
+
   def status
     @status = params[:num].to_i
     @message = case @status
@@ -87,6 +91,7 @@ class LevelsController < ApplicationController
       @message = '<a href="404">Click Here</a>'.html_safe
     end
   end
+
   def move
   end
 end
