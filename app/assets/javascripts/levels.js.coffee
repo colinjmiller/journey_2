@@ -3,10 +3,19 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready( ->
-  $("#the-box").on("mouseenter", ->
-    $(this).addClass("moving");
+  $("#the-box").on("click", ->
+    success = true
+    $(this).addClass("moving")
     $(this).on("mouseout", ->
-      $(this).css("background-color", "red");
-    );
-  );
-);
+      $(this).css("background-color", "red")
+      success = false
+    )
+    $(this).on("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", ->
+      $(this).removeClass("moving")
+      if success
+        console.log("You did it!")
+      else 
+        console.log("You failed.")
+    )
+  )
+)
