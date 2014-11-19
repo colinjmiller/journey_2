@@ -1,0 +1,23 @@
+de:
+  site_title: "Journey 2"
+  site_copyright: 
+    html: "&#169; Colin Miller"
+  levels:
+    size:
+      too_large:
+        title: "Agoraphobie"
+        description: "Dieser Platz is viel zu groß und weit. Bitte kleiner."
+      just_right:
+        thank_you: "Danke"
+        continue: "Zum Weitermachen hier klicken"
+      too_small:
+        title: "Claustophobia"
+        description: "Dieser Plazt ist viel zu klein und dünn. Bitte größer."
+    status:
+      please: "Bitte machen Sie es OK."
+      better_luck_status: "Sie werden besseres Glück hier haben"
+      better_luck_message:
+        html: '<a href="404">Hier klicken</a>'
+      thank_you: "Danke"
+    movement:
+      title: "Bewegung"

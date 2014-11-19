@@ -1,12 +1,12 @@
 <div class="too-large">
-  <h1>Agoraphobia</h1>
-  <p>This place is much too open and wide. Please make it smaller.</p>
+  <h1><%= t('levels.size.too_large.title') %></h1>
+  <p><%= t('levels.size.too_large.description') %></p>
 </div>
 <div class="just-right">
-  <p>Thank you.</p>
-  <a href="/">Click here to continue</a>
+  <p><%= t('levels.size.just_right.thank_you') %></p>
+  <%= link_to t('levels.size.just_right.continue'), root_url %>
 </div>
 <div class="too-small">
-  <h1>Claustophobia</h1>
-  <p>This place is much too small and thin. Please make it larger.</p>
+  <h1><%= t('levels.size.too_small.title') %></h1>
+  <p><%= t('levels.size.too_small.description') %></p>
 </div>

@@ -87,8 +87,8 @@ class LevelsController < ApplicationController
     when 598 then "Network read timeout error"
     when 599 then "Network connect timeout error"
     else
-      @status = "You'll have better luck by going here"
-      @message = '<a href="404">Click Here</a>'.html_safe
+      @status = I18n.t('levels.status.better_luck_status')
+      @message = I18n.t('levels.status.better_luck_message.html').html_safe
     end
   end
 

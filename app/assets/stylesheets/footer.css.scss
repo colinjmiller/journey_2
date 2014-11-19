@@ -1,5 +1,6 @@
 footer {
-  position: absolute;
+  position: fixed;
+  background-color: $primary-bgd-color;
   bottom: 0;
   width: 100%;
   text-align: center;

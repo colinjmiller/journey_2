@@ -1,14 +1,8 @@
 <div id="main">
   <div class="subject easy">
-    <a href="levels/size" class="level size complete">
-      &#8596;
-    </a>
-    <a href="/levels/status/400" class="level status">
-      OK
-    </a>
-    <a href="/levels/move" class="level" >
-      &#8620;
-    </a>
+    <%= link_to '&#8596;'.html_safe, size_level_url, {class: "level size complete"} %>
+    <%= link_to 'OK', status_level_url, {class: "level status"} %>
+    <%= link_to '&#8620;'.html_safe, move_level_url, {class: "level"} %>
   </div>
   <div class="subject medium">
   </div>

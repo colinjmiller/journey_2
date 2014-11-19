@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-  get 'levels/size', to: "levels#size"
-  get 'levels/status(/:num)', to: "levels#status"
-  get 'levels/move', to: "levels#move"
+  scope "(:locale)", locale: /en|de/ do
+    get 'levels/size', to: "levels#size", as: "size_level"
+    get 'levels/status(/:num)', to: "levels#status", as: "status_level"
+    get 'levels/move', to: "levels#move", as: "move_level"
 
-  get 'size', to: "size#index"
-  get 'size/sized', to: "index#show"
-
-  get 'begin', to: "begin#begin"
-
-  root 'index#show'
-  get 'index/show'
+    root 'index#show'
+    get 'index/show'
+  end
+  get '/:locale' => "index#show"
 end
